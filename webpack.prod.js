@@ -11,6 +11,7 @@ module.exports = {
         eosjs_numeric: './src/eosjs-numeric.ts',
         eosjs_serialize: './src/eosjs-serialize.ts', // AMIHDEBUG added this since it is needed in EOS-in-a-Box for creating webauthn key pairs
     },
+    
     mode: 'production',
     module: {
         rules: [

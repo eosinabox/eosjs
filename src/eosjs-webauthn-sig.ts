@@ -39,9 +39,11 @@ export class WebAuthnSignatureProvider implements SignatureProvider {
             const assertion = await (navigator as any).credentials.get({
                 publicKey: {
                     timeout: 60000,
+                    userVerification: 'required',
                     allowCredentials: [{
                         id,
                         type: 'public-key',
+                        transports: ['internal'],
                     }],
                     challenge: digest.buffer,
                 },
