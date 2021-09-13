@@ -7,7 +7,9 @@ module.exports = {
         eosjs_api: './src/eosjs-api.ts',
         eosjs_jsonrpc: './src/rpc-web.ts',
         eosjs_jssig: './src/eosjs-jssig.ts',
+        eosjs_wasig: './src/eosjs-webauthn-sig.ts', // AMIHDEBUG I need webauthn sig provider
         eosjs_numeric: './src/eosjs-numeric.ts',
+        eosjs_serialize: './src/eosjs-serialize.ts', // AMIHDEBUG added this since it is needed in EOS-in-a-Box for creating webauthn key pairs
     },
     mode: 'production',
     module: {
