@@ -1,3 +1,12 @@
+# amih
+
+    cd ~/dev/work/eosinabox/eosjs
+    npm run build-web-debug
+    cp dist-web/* ../eosinabox2/client/src/eosjs/dist-web/
+
+then switch to the eosinabox2 project, edit code, do a git push
+then switch to the sshAmiHEosinabox machine, do a git pull and refresh or if server changes, do sudo systemctl restart eosinabox
+
 # eosjs
 [![Build Status](https://github.com/eosio/eosjs/workflows/CI/badge.svg?branch=master)](https://github.com/EOSIO/eosjs/actions)  [![npm version](https://badge.fury.io/js/eosjs.svg)](https://badge.fury.io/js/eosjs)  [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)  ![npm](https://img.shields.io/npm/dw/eosjs.svg)
 
